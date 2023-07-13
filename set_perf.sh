@@ -1,0 +1,1 @@
+for cpu in /sys/devices/system/cpu/cpu*; do echo -n "performance" | sudo tee $cpu/cpufreq/scaling_governor; done
